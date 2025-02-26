@@ -3,39 +3,47 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Analog Watch</title>
+    <title>Ancient Indian Sundial Clock</title>
     <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Devanagari+Sangam+MN&display=swap" rel="stylesheet">
 </head>
 <body>
     <div class="clock-container">
-        <div class="logo">NKB</div>
         <div class="clock">
+            <img src="https://www.transparenttextures.com/patterns/arabesque.png" class="background-texture" alt="Mandala Texture">
             <div class="numbers">
-                <div class="number12">12</div>
-                <div class="number3">3</div>
-                <div class="number6">6</div>
-                <div class="number9">9</div>
+                <div class="number" style="--i: 12;">१२</div>
+                <div class="number" style="--i: 1;">१</div>
+                <div class="number" style="--i: 2;">२</div>
+                <div class="number" style="--i: 3;">३</div>
+                <div class="number" style="--i: 4;">४</div>
+                <div class="number" style="--i: 5;">५</div>
+                <div class="number" style="--i: 6;">६</div>
+                <div class="number" style="--i: 7;">७</div>
+                <div class="number" style="--i: 8;">८</div>
+                <div class="number" style="--i: 9;">९</div>
+                <div class="number" style="--i: 10;">१०</div>
+                <div class="number" style="--i: 11;">११</div>
             </div>
             <div class="center-disk"></div>
-            <div class="arrows">
-                <div class="hour"></div>
-                <div class="minute"></div>
-                <div class="second"></div>
+            <div class="hands">
+                <div class="hand hour-hand"></div>
+                <div class="hand minute-hand"></div>
+                <div class="hand second-hand"></div>
             </div>
         </div>
         <div class="controls">
             <select id="timezone">
+                <option value="Asia/Kolkata">Kolkata (IST)</option>
                 <option value="UTC">UTC</option>
                 <option value="America/New_York">New York (EST)</option>
                 <option value="America/Los_Angeles">Los Angeles (PST)</option>
                 <option value="Europe/London">London (GMT)</option>
                 <option value="Europe/Berlin">Berlin (CET)</option>
-                <option value="Asia/Kolkata">Kolkata (IST)</option>
                 <option value="Asia/Tokyo">Tokyo (JST)</option>
                 <option value="Australia/Sydney">Sydney (AEDT)</option>
-                <!-- Add more timezones as needed -->
             </select>
-            <button id="showTime">Click here to see time</button>
+            <button id="showTime">Show Time</button>
         </div>
         <div id="displayTime" class="display-time"></div>
     </div>
